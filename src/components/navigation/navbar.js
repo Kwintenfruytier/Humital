@@ -1,42 +1,34 @@
 import * as React from "react"
 import { Link } from "gatsby"
-import {
-  companyName,
-  navContainer,
-  navBar,
-  navLogo,
-  ul,
-  navigation,
-} from "./navbar.module.css"
+import * as styles from "./navbar.module.css"
 
 const NavBar = () => {
   return (
-    <nav className={navContainer}>
-      <div className={companyName}>
-        <Link className={navLogo} to="/">
-          Humital.
-        </Link>
-      </div>
-      <div className={navigation}>
-        <ul className={ul}>
-          <li>
-            <Link className={navBar} to="/">
-              Home
-            </Link>
-          </li>
-          <li>
-            <Link className={navBar} to="/About">
-              Over Ons
-            </Link>
-          </li>
-          <li>
-            <Link className={navBar} to="/">
-              Contact
-            </Link>
-          </li>
-        </ul>
-      </div>
-    </nav>
+    <div>
+      <header>
+        <h1 className={styles.logo}>
+          <Link to="/">Humital.</Link>
+        </h1>
+        <input type="checkbox" id="navToggle" className={styles.navToggle} />
+
+        <nav>
+          <ul>
+            <li>
+              <Link to="/">Home</Link>
+            </li>
+            <li>
+              <Link to="/about">Over Ons</Link>
+            </li>
+            <li>
+              <Link to="/contact">Contact</Link>
+            </li>
+          </ul>
+        </nav>
+        <label for="navToggle" className={styles.navToggleLabel}>
+          <span></span>
+        </label>
+      </header>
+    </div>
   )
 }
 

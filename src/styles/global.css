@@ -1,66 +1,33 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital@0;1&display=swap");
 
-* {
-  font-family: "Roboto", sans-serif;
-  text-decoration: none;
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-  color: white;
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
 }
 
-html,
 body {
-  min-height: 100%;
-}
-body {
-  background: radial-gradient(
-    circle,
-    rgba(51, 71, 54, 1) 0%,
-    rgba(44, 67, 48, 1) 64%,
-    rgba(11, 47, 16, 1) 100%
-  );
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  color: whitesmoke;
+  background: radial-gradient(circle at center, #2b2b2b, #414141);
 }
 
 p {
   margin: 1rem auto;
-  line-height: 1.5rem;
+  line-height: 1rem;
 }
 
 /* layout & nav */
 
-.layout {
-  max-width: 100%;
-  margin: 0 auto;
-  border-bottom: 1px solid slategrey;
-}
-
-nav {
-  display: flex;
-  margin: 2.5rem auto;
-  border-bottom: 1px solid slategray;
-  align-items: left;
-  justify-content: space-between;
-}
-
-nav a {
-  display: flex;
-  border-radius: 5px;
-  margin-left: 1.25rem;
-  margin-right: 1.25rem;
-  font-weight: 400;
-  padding-bottom: 0.5rem;
-}
-
-nav a:hover {
-  transition: all ease-in-out 0.5s;
-  font-size: larger;
-  background-color: gray;
-}
-
 footer p {
+  background-color: #2b2b2b;
+  font-size: smaller;
+  opacity: 0.98;
+  margin-bottom: 0;
+  padding-bottom: 1rem;
+  padding-top: 1rem;
   position: fixed;
-  border-top: 1px solid whitesmoke;
   width: 100%;
   bottom: 0;
   z-index: 90;

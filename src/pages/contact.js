@@ -1,12 +1,12 @@
 import * as React from "react"
 import Layout from "../components/layout/layout"
 
-const About = () => {
+const Contact = () => {
   return (
     <Layout>
-      <title>Over Ons</title>
+      <title>Contact</title>
 
-      <h1>Iets over ons bedrijf</h1>
+      <h1>contacteer ons!</h1>
       <p>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel
         tristique purus. Donec varius dui scelerisque, tristique enim et, mollis
@@ -63,4 +63,4 @@ const About = () => {
     </Layout>
   )
 }
-export default About
+export default Contact
