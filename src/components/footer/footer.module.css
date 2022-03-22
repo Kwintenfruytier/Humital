@@ -1,0 +1,9 @@
+footer {
+  background-color: #2b2b2b;
+  position: relative;
+  font-size: smaller;
+  opacity: 0.98;
+  padding: 1rem;
+  width: 100%;
+  margin-top: auto;
+}

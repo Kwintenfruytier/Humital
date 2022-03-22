@@ -5,8 +5,19 @@
 *::after {
   box-sizing: border-box;
 }
+html {
+  height: 100%;
+}
+
+main {
+  flex: 1 0 auto;
+}
 
 body {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  height: 100%;
   margin: 0;
   font-family: "Roboto", sans-serif;
   color: whitesmoke;
@@ -16,19 +27,4 @@ body {
 p {
   margin: 1rem auto;
   line-height: 1rem;
-}
-
-/* layout & nav */
-
-footer p {
-  background-color: #2b2b2b;
-  font-size: smaller;
-  opacity: 0.98;
-  margin-bottom: 0;
-  padding-bottom: 1rem;
-  padding-top: 1rem;
-  position: fixed;
-  width: 100%;
-  bottom: 0;
-  z-index: 90;
 }

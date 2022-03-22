@@ -1,8 +1,14 @@
-@import "../../styles/global.css";
-
 .container {
+  display: flex;
+  flex-direction: column;
   padding-top: 5rem;
-  padding-bottom: 3rem;
+  padding-bottom: 1rem;
   margin-left: 1rem;
   line-height: 1rem;
+  flex: 1 0 auto;
+  position: relative;
+}
+
+.flex {
+  flex: 1;
 }
