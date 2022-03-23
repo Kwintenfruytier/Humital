@@ -1,6 +1,7 @@
 import * as React from "react"
 import { Link } from "gatsby"
 import * as styles from "./navbar.module.css"
+import { StaticImage } from "gatsby-plugin-image"
 
 const NavBar = () => {
   return (

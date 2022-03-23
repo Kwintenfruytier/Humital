@@ -2,7 +2,8 @@
 
 header {
   /* background-color: rgba(2, 91, 14, 0.9);*/
-  background-color: #2b2b2b;
+  /* background-color: #2b2b2b;*/
+  background: radial-gradient(circle at center, #2b2b2b, #414141);
   text-align: center;
   z-index: 9999;
   width: 100%;
@@ -95,6 +96,7 @@ nav ul {
 nav li {
   margin-bottom: 1rem;
   margin-right: 1rem;
+  margin-top: 0.5rem;
 }
 
 nav a {
