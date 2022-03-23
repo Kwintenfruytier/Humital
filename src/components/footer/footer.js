@@ -7,8 +7,7 @@ const Footer = () => {
   return (
     <div>
       <footer>
-        <p>Made with ❤️</p>
-        <p>©Copyright {currentYear} Humital</p>
+        <p>©Copyright {currentYear} Humital - Made with ❤️</p>
       </footer>
     </div>
   )
