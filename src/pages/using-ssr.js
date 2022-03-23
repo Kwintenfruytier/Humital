@@ -1,12 +1,10 @@
 import * as React from "react"
 import { Link } from "gatsby"
 
-import Seo from "../components/seo"
-
 const UsingSSR = ({ serverData }) => {
   return (
     <div>
-      <Seo title="Using SSR" />
+      <title>Using SSR</title>
       <h1>SSR page</h1>
       <img
         style={{ width: "300px" }}
