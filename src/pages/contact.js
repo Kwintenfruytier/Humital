@@ -1,10 +1,11 @@
 import * as React from "react"
 import Layout from "../components/layout/layout"
+import Seo from "../components/seo"
 
 const Contact = () => {
   return (
     <Layout>
-      <title>Contact</title>
+      <Seo title="Contact" />
 
       <h1>contacteer ons!</h1>
       <p>

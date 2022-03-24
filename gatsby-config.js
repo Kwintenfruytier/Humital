@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `Humital`,
-    description: `Combining Human with Capital, Humital staat voor jou klaar.`,
+    description: `Combining Human with Capital, Humital staat voor jou klaar. Wij helpen jou technologie te combineren met het menselijke`,
     author: `@gatsbyjs`,
     siteUrl: `https://gatsbystarterdefaultsource.gatsbyjs.io/`,
   },
@@ -28,6 +28,7 @@ module.exports = {
         // https://css-tricks.com/meta-theme-color-and-trickery/
         // theme_color: `#663399`,
         display: `minimal-ui`,
+        icon: "./src/images/favicon.ico",
         // This path is relative to the root of the site.
       },
     },

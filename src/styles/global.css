@@ -1,5 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital@0;1&display=swap");
-
+:root {
+  --backgroundclr: whitesmoke;
+}
 *,
 *::before,
 *::after {
@@ -14,18 +16,35 @@ main {
   flex: 1 0 auto;
 }
 
+header {
+  background-color: var(--backgroundclr);
+  text-align: center;
+  z-index: 9999;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  margin-left: 0;
+}
+
 body {
   display: flex;
   flex-direction: column;
   position: relative;
   height: 100%;
-  margin: 0;
+  min-width: 100vh;
+  margin: 0 auto;
   font-family: "Roboto", sans-serif;
-  color: whitesmoke;
-  background: radial-gradient(circle at center, #2b2b2b, #414141);
+  color: black;
+  background: var(--backgroundclr);
+  margin-top: 5rem;
 }
 
 p {
   margin: 1rem auto;
   line-height: 1rem;
+}
+
+h1 {
+  margin: 1rem auto;
+  padding: 1rem 1rem 2rem 2rem;
 }

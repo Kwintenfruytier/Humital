@@ -9,11 +9,9 @@ const Layout = ({ children }) => {
     <>
       <div className={styles.flex}>
         <NavBar />
-        <div className={styles.container}>
-          <main>{children}</main>
-        </div>
-        <Footer />
+        <main>{children}</main>
       </div>
+      <Footer />
     </>
   )
 }

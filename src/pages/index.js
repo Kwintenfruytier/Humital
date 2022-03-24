@@ -1,10 +1,11 @@
 import * as React from "react"
 
 import Layout from "../components/layout/layout"
+import Seo from "../components/seo"
 const IndexPage = () => {
   return (
     <Layout>
-      <title>Home</title>
+      <Seo title="Home"/>
 
       <h1>Hi people! Wij zijn Humital. Welkom op de homepagina</h1>
       <p>
