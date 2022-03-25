@@ -2,7 +2,7 @@ module.exports = {
   siteMetadata: {
     title: `Humital`,
     description: `Combining Human with Capital, Humital staat voor jou klaar. Wij helpen jou technologie te combineren met het menselijke`,
-    author: `@gatsbyjs`,
+    author: `@Kwinten`,
     siteUrl: `https://gatsbystarterdefaultsource.gatsbyjs.io/`,
   },
   plugins: [
@@ -23,7 +23,6 @@ module.exports = {
         name: `Humital website`,
         short_name: `Humital`,
         start_url: `/`,
-        background_color: `#663399`,
         // This will impact how browsers show your PWA/website
         // https://css-tricks.com/meta-theme-color-and-trickery/
         // theme_color: `#663399`,

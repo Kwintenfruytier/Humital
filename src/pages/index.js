@@ -5,7 +5,7 @@ import Seo from "../components/seo"
 const IndexPage = () => {
   return (
     <Layout>
-      <Seo title="Home"/>
+      <Seo title="Home" />
 
       <h1>Hi people! Wij zijn Humital. Welkom op de homepagina</h1>
       <p>
