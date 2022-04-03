@@ -8,3 +8,22 @@ footer {
   bottom: 0;
   color: whitesmoke;
 }
+
+.icon {
+  margin-right: 0.5rem;
+}
+
+footer:last-child {
+  bottom: 0;
+}
+
+footer p {
+  line-height: normal;
+}
+
+footer p:last-child {
+  margin-top: 0.5rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0;
+  font-weight: 200;
+}

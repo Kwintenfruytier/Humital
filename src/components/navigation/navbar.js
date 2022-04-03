@@ -7,9 +7,15 @@ const NavBar = () => {
   return (
     <div>
       <header>
-        <h1 className={styles.logo}>
-          <Link to="/">Humital.</Link>
-        </h1>
+        <Link to="/" className={styles.logo}>
+          <StaticImage
+            src="../../images/logo.png"
+            alt="logo"
+            width={40}
+          ></StaticImage>
+          <div className={styles.logoName}>Humital</div>
+        </Link>
+
         <input type="checkbox" id="navToggle" className={styles.navToggle} />
 
         <nav>
@@ -19,6 +25,9 @@ const NavBar = () => {
             </li>
             <li>
               <Link to="/about">Over Ons</Link>
+            </li>
+            <li>
+              <Link to="/services">Diensten</Link>
             </li>
             <li>
               <Link to="/contact">Contact</Link>

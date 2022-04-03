@@ -11,12 +11,25 @@
   top: 0;
   margin-left: 0; 
 } */
+:root {
+  --accentClr: "#78C0A8";
+}
 
-.logo a {
-  margin-left: 0;
-  font-size: 2rem;
-  color: rgb(51, 204, 51);
+header {
+  margin-bottom: 3rem;
+}
+
+.logo {
   text-decoration: none;
+  display: flex;
+  align-items: center;
+  margin-left: 1rem;
+}
+
+.logoName {
+  margin-left: 1rem;
+  font-size: 2.5rem;
+  color: #78c0a8;
 }
 
 .navToggle {
@@ -81,7 +94,8 @@ nav {
   top: 100%;
   right: 0;
   /*background-color: rgba(2, 91, 14, 0.9);*/
-  background-color: whitesmoke;
+  background-color: #e6e7e2;
+  opacity: 0.9;
   width: 100%;
   transform: scale(1, 0);
   transform-origin: top;
@@ -122,16 +136,19 @@ nav a:hover {
   transition: opacity 250ms ease-in-out 150ms;
 }
 
-@media only screen and (min-width: 480px) {
+@media only screen and (min-width: 650px) {
   .navToggleLabel {
     display: none;
   }
   header {
-    display: grid;
-    grid-template-columns: 0.1fr auto minmax(200px, 5fr) 0.1fr;
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
   }
   .logo {
-    grid-column: 2 / 3;
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
   }
 
   nav {
