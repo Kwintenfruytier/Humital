@@ -18,8 +18,7 @@ const IndexPage = () => {
         <div className={styles.ctaMain}>
           <h1 className={styles.ctaTitle}>
             Working digital
-            <span classname={styles.accentedMain}> empowers</span> human
-            capital.
+            <span> empowers</span> human capital.
           </h1>
           <span className={styles.ctaSubtitle}>
             Humital richt zich op het begrijpen en het begeleiden van groeiende

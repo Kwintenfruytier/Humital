@@ -11,7 +11,7 @@ const NavBar = () => {
           <StaticImage
             src="../../images/logo.png"
             alt="logo"
-            width={40}
+            width={50}
           ></StaticImage>
           <div className={styles.logoName}>Humital</div>
         </Link>

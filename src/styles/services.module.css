@@ -1,0 +1,88 @@
+.containerButtons {
+  margin-top: 8rem;
+  margin-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  /* position: relative;*/
+  flex-grow: 1;
+}
+
+/*image 1 */
+.brainfoodBtn {
+  background-color: transparent;
+  border-style: none;
+  text-align: center;
+  /*position: absolute;*/
+}
+
+.brainfoodImage {
+}
+
+.brainfoodImage:hover,
+.brainfoodImage:focus {
+  background-color: aqua;
+}
+
+/*image 2 */
+.journeyBtn {
+  background-color: transparent;
+  border-style: none;
+  /*position: absolute;*/
+}
+
+.journeyImage {
+  top: 80%;
+}
+
+.journeyImage:hover,
+.journeyImage:focus {
+  background-color: yellowgreen;
+}
+
+/*image 3 */
+.projectBtn {
+  background-color: transparent;
+  border-style: none;
+  /*position: absolute;*/
+}
+
+.projectImage {
+  top: 80%;
+}
+
+.projectImage:hover,
+.projectImage:focus {
+  background-color: aqua;
+}
+
+/*image 4 */
+.speakerBtn {
+  background-color: transparent;
+  border-style: none;
+  /*position: absolute;*/
+}
+
+.speakerImage {
+  top: 80%;
+}
+.speakerImage:hover,
+.speakerImage:focus {
+  background-color: aqua;
+}
+
+/*image 5 */
+.visualsBtn {
+  background-color: transparent;
+  border-style: none;
+  /*position: absolute;*/
+}
+
+.visualsImage {
+  top: 80%;
+}
+
+.visualsImage:hover,
+.visualsImage:focus {
+  background-color: red;
+}
