@@ -23,21 +23,55 @@
   min-height: max-content;
 }
 .brainfoodImage:hover,
-.brainfoodImage:focus {
+.brainfoodImage:focus,
+.brainfoodImage:active {
   transform: scale(1.3, 1.3);
   z-index: 500;
   opacity: 1;
+  cursor: pointer;
 }
-.brainfoodTxt {
+
+details .brainfoodTxt {
+  z-index: 10000;
+  background-color: black;
+  color: white;
+  transition: all 500ms ease-in-out;
+  font-size: 0.8rem;
+  position: absolute;
+}
+
+details[open] {
+  animation: moveIn 100ms ease-in-out;
+  font-size: larger;
+}
+
+details > summary {
+  list-style: none;
+}
+
+details > summary::marker, /* Latest Chrome, Edge, Firefox */ 
+details > summary::-webkit-details-marker /* Safari */ {
   display: none;
 }
+/*.brainfoodBtn:hover + .brainfoodTxt,
+.brainfoodBtn:active + .brainfoodTxt {
+  display: flex;
+  flex-wrap: wrap;
+  min-width: 15vw;
+  background-color: gray;
+  color: white;
+  z-index: 500;
+  position: absolute;
+  right: 10%;
+  transition: all 500ms ease-in-out;
+}*/
+
 /*image 2 */
 .journeyBtn {
   background-color: transparent;
   border-style: none;
   position: absolute;
   align-self: center;
-  z-index: 10;
   top: 17vh;
 }
 
@@ -51,6 +85,7 @@
 .journeyImage:focus {
   transform: scale(1.3, 1.3);
   z-index: 5;
+  cursor: pointer;
 }
 
 /*image 3 */
@@ -71,6 +106,7 @@
 .projectImage:focus {
   transform: scale(1.3, 1.3);
   z-index: 5;
+  cursor: pointer;
 }
 
 /*image 4 */
@@ -90,6 +126,7 @@
 .speakerImage:focus {
   transform: scale(1.3, 1.3);
   z-index: 5;
+  cursor: pointer;
 }
 
 /*image 5 */
@@ -110,6 +147,7 @@
 .visualsImage:focus {
   transform: scale(1.3, 1.3);
   z-index: 5;
+  cursor: pointer;
 }
 
 footer {

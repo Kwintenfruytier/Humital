@@ -4,9 +4,6 @@ import * as styles from "../styles/services.module.css"
 import Layout from "../components/layout/layout"
 import Seo from "../components/seo"
 
-function getSpan(classname) {
-  const mySpan = ""
-}
 const Services = () => {
   return (
     <Layout>
@@ -21,24 +18,27 @@ const Services = () => {
             )
           }}
         >
-          <StaticImage
-            src="../images/brainfood.png"
-            width={250}
-            className={styles.brainfoodImage}
-            alt="brainfood"
-          ></StaticImage>
+          <details>
+            <summary>
+              <StaticImage
+                src="../images/brainfood.png"
+                width={250}
+                className={styles.brainfoodImage}
+                alt="brainfood"
+              ></StaticImage>
+            </summary>
+            <p className={styles.brainfoodTxt}>
+              Brainfood - Wij denken heel graag met je mee. Ben je op zoek naar
+              een sparring partner om jouw idee te pitchen, en het verder te
+              laten evolueren? Of heb je nood aan advies en ondersteuning? Meer
+              weten over adviserende verkoop?
+            </p>
+          </details>
         </button>
-        <span className={styles.brainfoodTxt}>
-          Brainfood - Wij denken heel graag met je mee. Ben je op zoek naar een
-          sparring partner om jouw idee te pitchen, en het verder te laten
-          evolueren? Of heb je nood aan advies en ondersteuning? Meer weten over
-          adviserende verkoop?
-        </span>
 
         <button
           className={styles.journeyBtn}
           onClick={() => {
-            getElementByClass("brainfoodTxt")
             console.log(
               "Journey - Een realiseerbaar traject op maat van je organisatie. Direct implementeerbaar, met begeleiding en opvolging. Hierbij streven we naar voortdurende progressie van het team en van de productiviteit. Knowlegde transfer zal centraal staan."
             )
