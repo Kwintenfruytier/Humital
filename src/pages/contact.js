@@ -19,7 +19,7 @@ const Contact = () => {
           <p className={styles.contactDomien}>
             Domien De Rycke - 0472/33 30 95
           </p>
-          <p className={styles.mail}>Email: info@humital.be</p>
+          <p>Email: info@humital.be</p>
           <span className={styles.btnAppointment}>Maak een afspraak</span>
         </div>
         <div className={styles.maps}>

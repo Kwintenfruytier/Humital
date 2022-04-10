@@ -53,12 +53,12 @@ const Services = () => {
                 alt="journey"
               ></StaticImage>
             </summary>
-            <p>
+            <p className={styles.journeyTxt}>
               <span>Journey</span> Een realiseerbaar traject op maat van je
               organisatie. Direct implementeerbaar, met begeleiding en
               opvolging. Hierbij streven we naar voortdurende progressie van het
               team en van de productiviteit. Knowlegde transfer zal centraal
-              staan."
+              staan.
             </p>
           </details>
         </button>
@@ -80,7 +80,7 @@ const Services = () => {
                 alt="project"
               ></StaticImage>
             </summary>
-            <p>
+            <p className={styles.projectTxt}>
               <span>Project</span> Op zoek naar ondersteuning voor je projecten?
               Wij kunnen fungeren als projectleider, of wij kunnen verschillende
               andere projectrollen opnemen. Tegelijkertijd zorgen wij voor een
@@ -107,7 +107,7 @@ const Services = () => {
                 alt="speaker"
               ></StaticImage>
             </summary>
-            <p>
+            <p className={styles.speakerTxt}>
               <span> Speaker</span>Op zoek naar een spreker of facilitator voor
               je evenement of workshop ? Wij helpen je graag verder
             </p>
@@ -131,7 +131,7 @@ const Services = () => {
                 alt="visuals"
               ></StaticImage>
             </summary>
-            <p>
+            <p className={styles.visualsTxt}>
               <span>Visuals</span>Flows, processen of simpelweg de agendapunten
               van een meeting duidelijk visualiseren, dat is ons ding.
             </p>

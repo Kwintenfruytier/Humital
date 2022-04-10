@@ -17,6 +17,7 @@
 
 header {
   margin-bottom: 3rem;
+  z-index: 9999;
 }
 
 .logo {
@@ -56,6 +57,7 @@ header {
   border-radius: 3px;
   position: relative;
   transition: all 0.2s ease;
+  cursor: pointer;
 }
 
 .navToggleLabel span::before,
