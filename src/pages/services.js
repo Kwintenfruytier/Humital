@@ -21,7 +21,7 @@ const Services = () => {
           <details>
             <summary>
               <StaticImage
-                src="../images/brainfood.png"
+                src="../images/services/brainfood.png"
                 width={250}
                 className={styles.brainfoodImage}
                 alt="brainfood"
@@ -47,7 +47,7 @@ const Services = () => {
           <details>
             <summary>
               <StaticImage
-                src="../images/journey.png"
+                src="../images/services/journey.png"
                 width={250}
                 className={styles.journeyImage}
                 alt="journey"
@@ -74,7 +74,7 @@ const Services = () => {
           <details>
             <summary>
               <StaticImage
-                src="../images/project.png"
+                src="../images/services/project.png"
                 width={250}
                 className={styles.projectImage}
                 alt="project"
@@ -101,7 +101,7 @@ const Services = () => {
           <details>
             <summary>
               <StaticImage
-                src="../images/speaker.png"
+                src="../images/services/speaker.png"
                 width={250}
                 className={styles.speakerImage}
                 alt="speaker"
@@ -125,7 +125,7 @@ const Services = () => {
           <details>
             <summary>
               <StaticImage
-                src="../images/visuals.png"
+                src="../images/services/visuals.png"
                 width={250}
                 className={styles.visualsImage}
                 alt="visuals"

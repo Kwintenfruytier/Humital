@@ -26,24 +26,24 @@ details[open] summary + * {
 }
 
 details span {
-  font-weight: bold;
+  font-weight: 500;
   font-size: 1.5em;
   padding: 0.5em;
 }
 
 details p {
-  background-color: palegoldenrod;
   font-size: 0.7rem;
   position: relative;
-  border: 1px solid darkblue;
+  border: 1px dashed darkblue;
   display: flex;
   flex-direction: column;
   max-height: 30vh;
   top: -176px;
   margin-right: 2rem;
-  border-radius: 5px;
+  border-radius: 28px;
   max-width: 50%;
   letter-spacing: 0.5px;
+  padding: 1rem;
 }
 
 @keyframes fadeIn {
@@ -92,7 +92,7 @@ details > summary::-webkit-details-marker /* Safari */ {
 }
 
 .brainfoodTxt {
-  background-color: #a9d18e;
+  background-color: #f4b183;
   left: 45%;
 }
 
@@ -115,7 +115,7 @@ details > summary::-webkit-details-marker /* Safari */ {
   border-style: none;
   position: absolute;
   align-self: center;
-  top: 17vh;
+  top: 15vh;
 }
 
 .journeyImage {
@@ -141,7 +141,7 @@ details > summary::-webkit-details-marker /* Safari */ {
   border-style: none;
   position: absolute;
   align-self: center;
-  top: 32vh;
+  top: 30vh;
 }
 
 .projectImage {
@@ -157,7 +157,7 @@ details > summary::-webkit-details-marker /* Safari */ {
 }
 
 .projectTxt {
-  background-color: #78c0a8;
+  background-color: #a9d18e;
   left: 45%;
 }
 
@@ -167,7 +167,7 @@ details > summary::-webkit-details-marker /* Safari */ {
   border-style: none;
   position: absolute;
   align-self: center;
-  top: 48vh;
+  top: 46vh;
 }
 
 .speakerImage {
@@ -182,7 +182,7 @@ details > summary::-webkit-details-marker /* Safari */ {
 }
 
 .speakerTxt {
-  background-color: #f4b183;
+  background-color: #ffe699;
 }
 
 /*image 5 */
@@ -191,7 +191,7 @@ details > summary::-webkit-details-marker /* Safari */ {
   border-style: none;
   position: absolute;
   align-self: center;
-  top: 65vh;
+  top: 61vh;
 }
 
 .visualsImage {
@@ -207,7 +207,7 @@ details > summary::-webkit-details-marker /* Safari */ {
 }
 
 .visualsTxt {
-  background-color: #ffe699;
+  background-color: #78c0a8;
 
   left: 45%;
 }

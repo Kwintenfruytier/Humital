@@ -1,0 +1,225 @@
+/*Global styles for services*/
+
+.containerButtons {
+  margin-top: 8rem;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  position: relative;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+footer {
+  margin-top: 4.5rem;
+}
+
+details > * {
+  z-index: 501;
+  cursor: default;
+  user-select: text;
+  color: black;
+  padding: 0.5em;
+}
+
+details[open] summary + * {
+  animation: fadeIn 750ms ease-in-out;
+}
+
+details span {
+  font-weight: bold;
+  font-size: 1.5em;
+  padding: 0.5em;
+}
+
+details p {
+  font-size: 0.7rem;
+  position: relative;
+  border: 1px solid darkblue;
+  display: flex;
+  flex-direction: column;
+  max-height: 30vh;
+  top: -176px;
+  margin-right: 2rem;
+  border-radius: 5px;
+  max-width: 50%;
+  letter-spacing: 0.5px;
+  overflow: scroll;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: scale(0);
+  }
+
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+details > summary {
+  list-style: none;
+  cursor: pointer;
+}
+
+details > summary::marker, /* Latest Chrome, Edge, Firefox */ 
+details > summary::-webkit-details-marker /* Safari */ {
+  display: none;
+}
+
+/*image 1: missie */
+.missieBtn {
+  background-color: transparent;
+  border-style: none;
+  position: absolute;
+  align-self: center;
+}
+
+.missieImage {
+  background-size: contain;
+  transition: transform 150ms ease-in-out;
+  object-fit: contain;
+  min-height: max-content;
+}
+.missieImage:hover,
+.missieImage:focus,
+.missieImage:active {
+  transform: scale(1.3, 1.3);
+  z-index: 500;
+  opacity: 1;
+  cursor: pointer;
+}
+
+.missieTxt {
+  background-color: #f4b183;
+  left: 45%;
+}
+
+/*.missieBtn:hover + .missieTxt,
+.missieBtn:active + .missieTxt {
+  display: flex;
+  flex-wrap: wrap;
+  min-width: 15vw;
+  background-color: gray;
+  color: white;
+  z-index: 500;
+  position: absolute;
+  right: 10%;
+  transition: all 500ms ease-in-out;
+}*/
+
+/*image 2: visie*/
+.visieBtn {
+  background-color: transparent;
+  border-style: none;
+  position: absolute;
+  align-self: center;
+  top: 23vh;
+}
+
+.visieImage {
+  background-size: contain;
+  transition: transform 150ms ease-in-out;
+  object-fit: contain;
+}
+
+.visieImage:hover,
+.visieImage:focus {
+  transform: scale(1.3, 1.3);
+  z-index: 5;
+  cursor: pointer;
+}
+
+.visieTxt {
+  background-color: #b4c7e7;
+}
+
+/*image 3: Jan */
+.founderJBtn {
+  background-color: transparent;
+  border-style: none;
+  position: absolute;
+  align-self: center;
+  top: 39vh;
+}
+
+.founderJImage {
+  background-size: contain;
+  transition: transform 150ms ease-in-out;
+}
+
+.founderJImage:hover,
+.founderJImage:focus {
+  transform: scale(1.3, 1.3);
+  z-index: 5;
+  cursor: pointer;
+}
+
+.founderJTxt {
+  background-color: #a9d18e;
+  left: 45%;
+}
+
+/*image 4: Domien */
+.founderDBtn {
+  background-color: transparent;
+  border-style: none;
+  position: absolute;
+  align-self: center;
+  top: 69vh;
+  margin-bottom: 5rem;
+}
+
+.founderDImage {
+  background-size: contain;
+  transition: transform 150ms ease-in-out;
+  margin-bottom: 5rem;
+}
+.founderDImage:hover,
+.founderDImage:focus {
+  transform: scale(1.3, 1.3);
+  z-index: 5;
+  cursor: pointer;
+}
+
+.founderDTxt {
+  background-color: #ffe699;
+}
+
+/*Different screensizes*/
+
+@media only screen and (min-width: 750px) {
+  .missieBtn {
+    background-color: transparent;
+    border-style: none;
+    position: absolute;
+    align-self: center;
+  }
+  .visieBtn {
+    background-color: transparent;
+    border-style: none;
+    position: absolute;
+    align-self: center;
+  }
+
+  .founderJBtn {
+    background-color: transparent;
+    border-style: none;
+    position: absolute;
+    align-self: center;
+  }
+
+  .founderDBtn {
+    background-color: transparent;
+    border-style: none;
+    position: absolute;
+    align-self: center;
+  }
+
+  .visualsBtn {
+    background-color: transparent;
+    border-style: none;
+    position: absolute;
+  }
+}
