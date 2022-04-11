@@ -20,7 +20,9 @@ const Contact = () => {
             Domien De Rycke - 0472/33 30 95
           </p>
           <p>Email: info@humital.be</p>
-          <span className={styles.btnAppointment}>Maak een afspraak</span>
+          <span className={styles.btnAppointment}>
+            Maak een afspraak : https://calendly.com/grust
+          </span>
         </div>
         <div className={styles.maps}>
           <iframe

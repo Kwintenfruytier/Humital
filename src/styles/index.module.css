@@ -15,7 +15,6 @@
 
 .indexMain .heroImage {
   background-image: url(../images/heroBackgroundMain.png);
-  flex-grow: 1;
   min-height: 100vh;
   min-width: 30vw;
   background-size: contain;

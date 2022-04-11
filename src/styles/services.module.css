@@ -9,9 +9,6 @@
   margin-left: 1rem;
   margin-right: 1rem;
 }
-footer {
-  margin-top: 0;
-}
 
 details > * {
   z-index: 501;
@@ -85,7 +82,7 @@ details > summary::-webkit-details-marker /* Safari */ {
 .brainfoodImage:hover,
 .brainfoodImage:focus,
 .brainfoodImage:active {
-  transform: scale(1.3, 1.3);
+  transform: scale(1.1, 1.1);
   z-index: 500;
   opacity: 1;
   cursor: pointer;
@@ -126,7 +123,7 @@ details > summary::-webkit-details-marker /* Safari */ {
 
 .journeyImage:hover,
 .journeyImage:focus {
-  transform: scale(1.3, 1.3);
+  transform: scale(1.1, 1.1);
   z-index: 5;
   cursor: pointer;
 }
@@ -151,7 +148,7 @@ details > summary::-webkit-details-marker /* Safari */ {
 
 .projectImage:hover,
 .projectImage:focus {
-  transform: scale(1.3, 1.3);
+  transform: scale(1.1, 1.1);
   z-index: 5;
   cursor: pointer;
 }
@@ -176,7 +173,7 @@ details > summary::-webkit-details-marker /* Safari */ {
 }
 .speakerImage:hover,
 .speakerImage:focus {
-  transform: scale(1.3, 1.3);
+  transform: scale(1.1, 1.1);
   z-index: 5;
   cursor: pointer;
 }
@@ -201,14 +198,13 @@ details > summary::-webkit-details-marker /* Safari */ {
 
 .visualsImage:hover,
 .visualsImage:focus {
-  transform: scale(1.3, 1.3);
+  transform: scale(1.1, 1.1);
   z-index: 5;
   cursor: pointer;
 }
 
 .visualsTxt {
   background-color: #78c0a8;
-
   left: 45%;
 }
 

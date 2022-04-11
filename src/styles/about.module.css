@@ -1,6 +1,7 @@
 /*Global styles for services*/
 
 .containerButtons {
+  min-height: 120%;
   margin-top: 8rem;
   display: flex;
   flex-direction: column;
@@ -8,9 +9,6 @@
   position: relative;
   margin-left: 1rem;
   margin-right: 1rem;
-}
-footer {
-  margin-top: 4.5rem;
 }
 
 details > * {
@@ -21,7 +19,7 @@ details > * {
   padding: 0.5em;
 }
 
-details[open] summary + * {
+details[open] summary + * + ul {
   animation: fadeIn 750ms ease-in-out;
 }
 
@@ -34,16 +32,16 @@ details span {
 details p {
   font-size: 0.7rem;
   position: relative;
-  border: 1px solid darkblue;
+  border: 1px dashed darkblue;
   display: flex;
   flex-direction: column;
+  max-width: 30%;
   max-height: 30vh;
-  top: -176px;
   margin-right: 2rem;
-  border-radius: 5px;
+  border-radius: 28px;
   max-width: 50%;
   letter-spacing: 0.5px;
-  overflow: scroll;
+  padding: 1rem;
 }
 
 @keyframes fadeIn {
@@ -85,15 +83,32 @@ details > summary::-webkit-details-marker /* Safari */ {
 .missieImage:hover,
 .missieImage:focus,
 .missieImage:active {
-  transform: scale(1.3, 1.3);
+  transform: scale(1.1, 1.1);
   z-index: 500;
   opacity: 1;
   cursor: pointer;
 }
 
 .missieTxt {
-  background-color: #f4b183;
+  background-color: #b58e8b;
   left: 45%;
+  top: -176px;
+  font-size: 0.7rem;
+  position: relative;
+  border: 1px dashed darkblue;
+  display: flex;
+  flex-direction: column;
+  max-height: 20vh;
+  margin-right: 2rem;
+  border-radius: 28px;
+  max-width: 50%;
+  letter-spacing: 0.5px;
+  padding: 1rem;
+  overflow: scroll;
+}
+.missieTxt li {
+  text-align: left;
+  padding-bottom: 1rem;
 }
 
 /*.missieBtn:hover + .missieTxt,
@@ -115,7 +130,7 @@ details > summary::-webkit-details-marker /* Safari */ {
   border-style: none;
   position: absolute;
   align-self: center;
-  top: 23vh;
+  top: 20vh;
 }
 
 .visieImage {
@@ -126,13 +141,13 @@ details > summary::-webkit-details-marker /* Safari */ {
 
 .visieImage:hover,
 .visieImage:focus {
-  transform: scale(1.3, 1.3);
+  transform: scale(1.1, 1.1);
   z-index: 5;
   cursor: pointer;
 }
 
 .visieTxt {
-  background-color: #b4c7e7;
+  background-color: #cca09c;
 }
 
 /*image 3: Jan */
@@ -141,7 +156,7 @@ details > summary::-webkit-details-marker /* Safari */ {
   border-style: none;
   position: absolute;
   align-self: center;
-  top: 39vh;
+  top: 37.5vh;
 }
 
 .founderJImage {
@@ -151,14 +166,31 @@ details > summary::-webkit-details-marker /* Safari */ {
 
 .founderJImage:hover,
 .founderJImage:focus {
-  transform: scale(1.3, 1.3);
+  transform: scale(1.1, 1.1);
   z-index: 5;
   cursor: pointer;
 }
 
 .founderJTxt {
   background-color: #a9d18e;
-  left: 45%;
+  left: 52%;
+  top: -210px;
+  font-size: 0.7rem;
+  position: relative;
+  border: 1px dashed darkblue;
+  display: flex;
+  flex-direction: column;
+  max-height: 20vh;
+  margin-right: 2rem;
+  border-radius: 28px;
+  max-width: 50%;
+  letter-spacing: 0.5px;
+  padding: 1rem;
+  overflow: scroll;
+}
+.founderJTxt li {
+  text-align: left;
+  padding-bottom: 0.7rem;
 }
 
 /*image 4: Domien */
@@ -167,26 +199,41 @@ details > summary::-webkit-details-marker /* Safari */ {
   border-style: none;
   position: absolute;
   align-self: center;
-  top: 69vh;
-  margin-bottom: 5rem;
+  top: 65.9vh;
 }
 
 .founderDImage {
   background-size: contain;
   transition: transform 150ms ease-in-out;
-  margin-bottom: 5rem;
 }
+
 .founderDImage:hover,
 .founderDImage:focus {
-  transform: scale(1.3, 1.3);
+  transform: scale(1.1, 1.1);
   z-index: 5;
   cursor: pointer;
 }
 
 .founderDTxt {
-  background-color: #ffe699;
+  background-color: #b4c7e7;
+  top: -210px;
+  font-size: 0.7rem;
+  position: relative;
+  border: 1px dashed darkblue;
+  display: flex;
+  flex-direction: column;
+  max-height: 20vh;
+  margin-right: 2rem;
+  border-radius: 28px;
+  max-width: 50%;
+  letter-spacing: 0.5px;
+  padding: 1rem;
+  overflow: scroll;
 }
-
+.founderDTxt li {
+  text-align: left;
+  padding-bottom: 0.7rem;
+}
 /*Different screensizes*/
 
 @media only screen and (min-width: 750px) {
