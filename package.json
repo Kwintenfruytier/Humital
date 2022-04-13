@@ -8,22 +8,26 @@
     "@fortawesome/fontawesome-svg-core": "^6.1.1",
     "@fortawesome/free-solid-svg-icons": "^6.1.1",
     "@fortawesome/react-fontawesome": "^0.1.18",
-    "gatsby": "^4.10.0",
-    "gatsby-plugin-gatsby-cloud": "^4.10.0",
-    "gatsby-plugin-image": "^2.10.0",
-    "gatsby-plugin-manifest": "^4.10.0",
-    "gatsby-plugin-offline": "^5.11.1",
-    "gatsby-plugin-react-helmet": "^5.10.0",
-    "gatsby-plugin-sharp": "^4.10.0",
-    "gatsby-source-filesystem": "^4.10.0",
-    "gatsby-transformer-sharp": "^4.10.0",
+    "gatsby": "^4.12.1",
+    "gatsby-plugin-gatsby-cloud": "^4.12.1",
+    "gatsby-plugin-gdpr-cookies": "^2.0.8",
+    "gatsby-plugin-google-gtag": "^4.12.1",
+    "gatsby-plugin-image": "^2.12.1",
+    "gatsby-plugin-manifest": "^4.12.1",
+    "gatsby-plugin-offline": "^5.12.1",
+    "gatsby-plugin-react-helmet": "^5.12.1",
+    "gatsby-plugin-sharp": "^4.12.1",
+    "gatsby-plugin-sitemap": "^5.12.1",
+    "gatsby-source-filesystem": "^4.12.1",
+    "gatsby-transformer-sharp": "^4.12.1",
     "prop-types": "^15.8.1",
-    "react": "^17.0.1",
-    "react-dom": "^17.0.1",
+    "react": "^18.0.0",
+    "react-cookie-consent": "^7.4.1",
+    "react-dom": "^18.0.0",
     "react-helmet": "^6.1.0"
   },
   "devDependencies": {
-    "prettier": "^2.5.1"
+    "prettier": "^2.6.2"
   },
   "keywords": [
     "gatsby"

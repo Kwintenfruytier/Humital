@@ -13,7 +13,15 @@ footer {
   margin-right: 0.5rem;
 }
 
-footer:last-child {
+.footerContainer {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  text-align: left;
+}
+.leftFooter:last-child {
   bottom: 0;
 }
 
@@ -21,9 +29,26 @@ footer p {
   line-height: normal;
 }
 
-footer p:last-child {
-  margin-top: 0.5rem;
+.leftFooter p:last-child {
+  margin-top: 2rem;
   padding-top: 0.5rem;
   padding-bottom: 0;
   font-weight: 200;
+}
+
+.rightFooter {
+  flex-wrap: wrap;
+  margin: 0 auto;
+  flex-direction: row;
+}
+
+footer ul {
+  list-style: none;
+  text-align: left;
+}
+
+footer a {
+  text-decoration: none;
+  color: white;
+  text-align: left;
 }

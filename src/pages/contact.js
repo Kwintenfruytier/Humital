@@ -2,6 +2,7 @@ import * as React from "react"
 import * as styles from "../styles/contact.module.css"
 import Layout from "../components/layout/layout"
 import Seo from "../components/seo"
+import { Link } from "gatsby"
 
 const Contact = () => {
   return (
@@ -21,7 +22,10 @@ const Contact = () => {
           </p>
           <p>Email: info@humital.be</p>
           <span className={styles.btnAppointment}>
-            Maak een afspraak : https://calendly.com/grust
+            {" "}
+            <Link to="https://calendly.com/grust" target="_blank">
+              Maak een afspraak
+            </Link>
           </span>
         </div>
         <div className={styles.maps}>

@@ -104,7 +104,7 @@ details > summary::-webkit-details-marker /* Safari */ {
   max-width: 50%;
   letter-spacing: 0.5px;
   padding: 1rem;
-  overflow: scroll;
+  overflow: auto;
 }
 .missieTxt li {
   text-align: left;
@@ -186,7 +186,7 @@ details > summary::-webkit-details-marker /* Safari */ {
   max-width: 50%;
   letter-spacing: 0.5px;
   padding: 1rem;
-  overflow: scroll;
+  overflow: auto;
 }
 .founderJTxt li {
   text-align: left;
@@ -228,7 +228,7 @@ details > summary::-webkit-details-marker /* Safari */ {
   max-width: 50%;
   letter-spacing: 0.5px;
   padding: 1rem;
-  overflow: scroll;
+  overflow: auto;
 }
 .founderDTxt li {
   text-align: left;
