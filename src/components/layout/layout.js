@@ -23,15 +23,6 @@ const Layout = ({ children }) => {
           cursor: "pointer",
           color: "white",
         }}
-        overlayStyle={{
-          position: "fixed",
-          left: 0,
-          top: 0,
-          width: "100%",
-          height: "100%",
-          zIndex: "999",
-          backgroundColor: "rgba(0,0,0,0.3)",
-        }}
         location="bottom"
         buttonText="Accepteer de koekjes"
         enableDeclineButton
