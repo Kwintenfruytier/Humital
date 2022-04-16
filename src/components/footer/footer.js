@@ -8,53 +8,44 @@ const currentYear = new Date().getFullYear()
 const Footer = () => {
   return (
     <footer className={styles.flexFooter}>
-      <ul className={styles.footerTopList}>
-        <li>
-          <h4 className={styles.footerTopHeader}>
-            <Link to="/home" className={styles.footerLogo}>
-              Humital
+      <section className={styles.footerTopSection}>
+        <ul className={styles.footerTopList}>
+          <li>
+            <h4>
+              <Link to="/home" className={styles.footerLogo}>
+                Humital
+              </Link>
+            </h4>
+          </li>
+        </ul>
+
+        <ul className={styles.footerTopList}>
+          <li>
+            <h4>Over Humital</h4>
+          </li>
+          <li>
+            <Link to="/about">leer ons kennen</Link>
+          </li>
+        </ul>
+
+        <ul className={styles.footerTopList}>
+          <li>
+            <h4>Help me</h4>
+          </li>
+          <li>
+            <Link to="/contact">Contacteer ons</Link>
+          </li>
+          <li>
+            <Link to="https://calendly.com/grust" target="_blank">
+              Maak een afspraak
             </Link>
-          </h4>
-        </li>
-      </ul>
-
-      <ul className={styles.footerTopList}>
-        <li>
-          <h4 className={styles.footerTopHeader}>Over Humital</h4>
-        </li>
-        <li>
-          <Link to="/about" className={styles.footerLinks}>
-            leer ons kennen
-          </Link>
-        </li>
-      </ul>
-
-      <ul className={styles.footerTopList}>
-        <li>
-          <h4 className={styles.footerTopHeader}>Help me</h4>
-        </li>
-        <li>
-          <Link to="/contact" className={styles.footerLinks}>
-            Contacteer ons
-          </Link>
-        </li>
-        <li>
-          <Link
-            to="https://calendly.com/grust"
-            target="_blank"
-            className={styles.footerLinks}
-          >
-            Maak een afspraak
-          </Link>
-        </li>
-      </ul>
-
+          </li>
+        </ul>
+      </section>
       <section className={styles.footerBottomSection}>
         <div className={styles.footerBottomWrapper}>
           <p>©Copyright {currentYear} Humital - Made with ❤️</p>
-          <span className={styles.footerBottomRights}>
-            - All Rights Reserved -
-          </span>
+          <span>- All Rights Reserved -</span>
         </div>
         <div className={styles.footerBottomWrapper}>
           <Link to="/sitemap">Sitemap</Link>|
