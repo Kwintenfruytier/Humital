@@ -5,7 +5,7 @@
   flex-grow: 1;
 }
 
-.indexMain .imageWrapper {
+.imageWrapper {
   flex-grow: 1;
   flex-direction: column;
   display: flex;
@@ -13,23 +13,24 @@
   justify-content: flex-end;
 }
 
-.indexMain .heroImage {
+.heroImage {
   background-image: url(../images/heroBackgroundMain.png);
   min-height: 100vh;
-  min-width: 30vw;
+  min-width: 80vw;
   background-size: contain;
   background-repeat: no-repeat;
   background-position: bottom left;
   opacity: 0.9;
   z-index: -1;
+  margin-top: 5rem;
+  position: relative;
 }
-.indexMain .ctaMain {
+.ctaMain {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   margin: 1rem;
   margin-top: 5rem;
-  align-self: flex-start;
 }
 .ctaTitle {
   font-weight: 500;

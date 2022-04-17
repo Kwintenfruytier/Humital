@@ -1,5 +1,6 @@
-.notFoundWrapper {
+.privacyWrapper {
   margin-top: 5rem;
+  padding-bottom: 4rem;
   display: flex;
   flex-flow: row wrap;
   width: 100%;
@@ -7,64 +8,59 @@
   padding-right: 1rem;
   align-items: center;
   justify-content: center;
+  /*font-size: clamp(1.2rem, 3vw, 2.3rem);*/
 }
-.notFoundHeader {
+.privacyHeader {
   font-size: clamp(1.6rem, 5vw, 4rem);
   margin: 1rem auto;
   line-height: 1.5;
 }
-
-.notFoundImage {
-  position: relative;
-  max-width: 50%;
-  align-items: center;
-  margin: 0 auto;
-  margin-top: 1rem;
-  object-fit: contain;
-  object-position: center;
+.privacySubtitle {
+  font-size: clamp(1.2rem, 3vw, 2.3rem);
+}
+.privacyContent h3 {
+  text-transform: uppercase;
+  font-size: clamp(0.9rem, 2vw, 2.3rem);
 }
 
-.notFoundContent {
+.privacyContent {
   line-height: calc(normal * 1.2);
-  margin: 1.2rem auto;
 }
 
-.notFoundContent span {
-  font-weight: 700;
-  color: #78c0a8;
-}
-
-.notFoundContent p {
+.privacyContent p {
   line-height: calc(1rem + 0.5vw);
   word-break: break-word;
   text-align: justify;
+  margin: 0;
+  font-size: clamp(0.895rem, 2vw, 1.3rem);
 }
 
-.notFoundContent a {
+.privacyContent a {
   padding: 1rem 0;
   transition: color 1s ease-out;
   color: #5e412f;
   text-decoration-skip-ink: auto;
   text-decoration-line: underline;
+  text-transform: inherit;
 }
-
-.notFoundContent h3 {
-  font-size: clamp(1.2rem, 3vw, 2.3rem);
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  color: #78c0a8;
-  padding-left: 1rem;
+.privacyContent span {
+  color: #5e412f;
+}
+.privacyContent li {
+  list-style: disc;
+  text-align: justify;
+  font-size: clamp(0.895rem, 2vw, 1.3rem);
 }
 
 @media only screen and (min-width: 55rem) {
-  .notFoundContent {
+  .privacyContent {
     flex-basis: 66.66667%;
     max-width: 66.66667%;
   }
 }
 
 @media only screen and (min-width: 1500px) {
-  .notFoundWrapper {
+  .privacyWrapper {
     flex-direction: column;
   }
 }

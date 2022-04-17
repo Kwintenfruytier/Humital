@@ -13,7 +13,7 @@ const NotFoundPage = () => (
         Oh nee! We zijn jouw pagina kwijt! (404)
       </h1>
       <StaticImage
-        src="../images/404.png"
+        src="../images/404plant.png"
         alt="persoon die fiets herstelt"
         loading="lazy"
         width={500}
