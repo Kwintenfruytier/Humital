@@ -10,26 +10,24 @@ const IndexPage = () => {
     <Layout>
       <Seo title="Home" />
 
-      <section className={styles.indexMain}>
-        <div className={styles.imageWrapper}>
-          <div className={styles.heroImage}></div>
-        </div>
-        <div className={styles.ctaMain}>
-          <h1 className={styles.ctaTitle}>
-            Working digital
-            <span> empowers</span> human capital.
-          </h1>
+      <div className={styles.indexMain}>
+        <div className={styles.ctaContent}>
+          <div className={styles.ctaWrapper}>
+            <h1 className={styles.ctaTitle}>
+              Working digital <span> empowers </span> human capital.
+            </h1>
 
-          <span className={styles.ctaSubtitle}>
-            Humital richt zich op het begrijpen en het begeleiden van groeiende
-            entrepreneurs die een strategische humitale transformatie willen
-            realiseren.
-          </span>
-          <Link to="/contact" className={styles.ctaButton}>
-            contacteer ons
-          </Link>
+            <p className={styles.ctaSubtitle}>
+              Humital richt zich op het begrijpen en het begeleiden van
+              groeiende entrepreneurs die een strategische humitale
+              transformatie willen realiseren.
+            </p>
+            <span className={styles.ctaButton}>
+              <Link to="/contact">contacteer ons</Link>
+            </span>
+          </div>
         </div>
-      </section>
+      </div>
     </Layout>
   )
 }
