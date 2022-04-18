@@ -7,7 +7,11 @@ const NavBar = () => {
   return (
     <div>
       <header>
-        <Link to="/" className={styles.logo}>
+        <Link
+          to="/"
+          className={styles.logo}
+          activeStyle={{ fontWeight: "bold", color: "#78C0A8" }}
+        >
           <StaticImage
             src="../../images/logo.png"
             alt="logo"
@@ -21,16 +25,36 @@ const NavBar = () => {
         <nav>
           <ul>
             <li>
-              <Link to="/">Home</Link>
+              <Link
+                to="/"
+                activeStyle={{ fontWeight: "bold", color: "#78C0A8" }}
+              >
+                Home
+              </Link>
             </li>
             <li>
-              <Link to="/about">Over Ons</Link>
+              <Link
+                to="/about"
+                activeStyle={{ fontWeight: "bold", color: "#78C0A8" }}
+              >
+                Over Ons
+              </Link>
             </li>
             <li>
-              <Link to="/services">Diensten</Link>
+              <Link
+                to="/services"
+                activeStyle={{ fontWeight: "bold", color: "#78C0A8" }}
+              >
+                Diensten
+              </Link>
             </li>
             <li>
-              <Link to="/contact">Contact</Link>
+              <Link
+                to="/contact"
+                activeStyle={{ fontWeight: "bold", color: "#78C0A8" }}
+              >
+                Contact
+              </Link>
             </li>
           </ul>
         </nav>

@@ -86,3 +86,18 @@ p {
 .maps {
   margin: 0 auto;
 }
+
+@media only screen and (min-width: 720px) {
+  .contactWrapper {
+    flex-direction: row-reverse;
+  }
+
+  .contactInfo {
+    flex-direction: column;
+    flex-basis: 0;
+  }
+  iframe {
+    display: flex;
+    flex-direction: row;
+  }
+}
