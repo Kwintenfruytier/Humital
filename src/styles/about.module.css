@@ -90,12 +90,12 @@ details > summary::-webkit-details-marker /* Safari */ {
 }
 
 .missieTxt {
-  background-color: #b58e8b;
+  background-color: #e6e7e2;
   left: 45%;
   top: -176px;
   font-size: 0.7rem;
   position: relative;
-  border: 1px dashed darkblue;
+  /*border: 1px dashed darkblue;*/
   display: flex;
   flex-direction: column;
   max-height: 20vh;
