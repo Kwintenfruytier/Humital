@@ -37,7 +37,7 @@ const NavBar = () => {
                 to="/about"
                 activeStyle={{ fontWeight: "bold", color: "#78C0A8" }}
               >
-                Ontmoet onze digitale freaks
+                Onze digitale freaks
               </Link>
             </li>
             <li>

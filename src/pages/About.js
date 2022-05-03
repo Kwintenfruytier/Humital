@@ -8,111 +8,121 @@ const About = () => {
   return (
     <Layout>
       <Seo title="Over Ons" />
+      <div className={styles.aboutBanner}>
+        <h1 className={styles.bannerTitle}>Meer weten over ons?</h1>
+      </div>
 
-      <div className={styles.containerButtons}>
-        <button className={styles.missieBtn}>
-          <details>
-            <summary>
-              <StaticImage
-                src="../images/overOns/missie.png"
-                width={200}
-                className={styles.missieImage}
-                alt="missie"
-              ></StaticImage>
-            </summary>
-
-            <ul className={styles.missieTxt}>
-              <span>Humital wil, kan, en zal...</span>
-              <li>
-                ...elke dag het verschil maken voor elke klant, en er 100% voor
-                gaan
-              </li>
-              <li>
-                ...gewoon zijn wie we zijn met onze gebreken en tekortkomingen
-              </li>
-              <li>...klanten behandelen zoals zij dat liefst willen</li>
-
-              <li>...altijd blijven leren, ook "aan" en "van" anderen</li>
-
-              <li>...empatisch zijn en meedenken met de klant</li>
-
-              <li>
-                ...dankbaar zijn voor wat we hebben, nog niet hebben, krijgen,
-                en kunnen geven
-              </li>
-
-              <li>
-                ...een sfeer van ontspanning en rust uitstralen aan iedere klant
-              </li>
-
-              <li>
-                ...een veilige haven creeëren waar iedereen vrijuit kan spreken
-              </li>
-            </ul>
-          </details>
-        </button>
-
-        <button className={styles.visieBtn}>
-          <details>
-            <summary>
-              <StaticImage
-                src="../images/overOns/visie.png"
-                width={200}
-                className={styles.visieImage}
-                alt="visie"
-              ></StaticImage>
-            </summary>
-            <p className={styles.visieTxt}>
-              <span>visie</span> we komen niet met een "Plug & Play" oplossing.
-              Niets moet, alles kan! Onze aanbevelingen zullen een wereld van
-              verschil maken.
+      <div className={styles.founderTopContainer}>
+        <div className={styles.founderJLeftContainer}>
+          <div className={styles.founderJLeftContent}>
+            <StaticImage
+              src="../images/overOns/janFruytier_main.svg"
+              alt="Jan Fruytier"
+              width={200}
+              className={styles.imageJan}
+            ></StaticImage>
+          </div>
+        </div>
+        <div className={styles.founderJRightContainer}>
+          <div className={styles.founderJRightContent}>
+            <h4 className={styles.founderName}>Jan Fruytier</h4>
+            <p>
+              Een ambitieuse en grensverleggende partner. Ik ben daadkrachtig,
+              doortastend en steeds vastberaden. Sociaal, spontaan en een beetje
+              niewsgierig zijn mijn handelsmerk.
             </p>
-          </details>
-        </button>
+          </div>
+        </div>
+      </div>
 
-        <button className={styles.founderJBtn}>
-          <details>
-            <summary>
-              <StaticImage
-                width={180}
-                src="../images/overOns/janFruytier.png"
-                className={styles.founderJImage}
-                alt="Jan Fruytier afbeelding"
-              ></StaticImage>
-            </summary>
+      <div className={styles.founderBottomContainer}>
+        <div className={styles.founderDRightContainer}>
+          <div className={styles.founderDRightContent}>
+            <StaticImage
+              src="../images/overOns/domienDeRycke_main.svg"
+              alt="Domien De Rycke"
+              width={200}
+              className={styles.imageDomien}
+            ></StaticImage>
+          </div>
+        </div>
+        <div className={styles.founderDLeftContainer}>
+          <div className={styles.founderDLeftContent}>
+            <h4 className={styles.founderName}>Domien De Rycke</h4>
+            <p>
+              Een wereldberkenner met flexibele en zelfstandige ingesteldheid.
+              Ik ben ondernemend effeciënt en heb aandacht voor eenduidige en
+              correcte communicatie. Daarnaast ben ik structureel en
+              georiënteerd en sociaal sterk aanwezig.
+            </p>
+          </div>
+        </div>
+      </div>
 
-            <ul className={styles.founderJTxt}>
-              <li>Ambitieus en grensverleggend</li>
-              <li>Daadkrachtig en doortastend</li>
-              <li>Wilskrachtig en vastberaden</li>
-              <li>Sociaal, spontaan, en een nieuwsgierig</li>
-              <li>Enthousiast en inspirerend</li>
-            </ul>
-          </details>
-        </button>
+      <div className={styles.aboutBanner}>
+        <h1 className={styles.bannerTitle}>Visie & Missie</h1>
+      </div>
 
-        <button className={styles.founderDBtn}>
-          <details>
-            <summary>
-              <StaticImage
-                width={180}
-                src="../images/overOns/domienDeRycke.png"
-                className={styles.founderDImage}
-                alt="Domien De Rycke afbeelding"
-              ></StaticImage>
-            </summary>
+      <div className={styles.containerMissie}>
+        <h1 className={styles.missieTitle}>Humital wil, kan, en zal...</h1>
+        <ul className={styles.missieTxt}>
+          <li className={styles.bulletsMissie}>
+            ... elke dag het verschil maken voor elke klant, en er{" "}
+            <span className={styles.focusMissie}>100% </span>voor gaan
+          </li>
+          <li className={styles.bulletsMissie}>
+            ... gewoon <span className={styles.focusMissie}>zijn wie we </span>
+            zijn met onze gebreken en tekortkomingen
+          </li>
+          <li className={styles.bulletsMissie}>
+            ... klanten <span className={styles.focusMissie}>behandelen</span>{" "}
+            zoals zij dat liefst willen
+          </li>
 
-            <ul className={styles.founderDTxt}>
-              <li>Ondernemend efficiënt</li>
-              <li>Aandacht voor eenduidige en correcte communicatie</li>
-              <li>Structureer georoënteerd</li>
-              <li>Sociaal sterk aanwezig</li>
-              <li>
-                Wereldverkenner met flexible en zelfstandige ingesteldheid
-              </li>
-            </ul>
-          </details>
-        </button>
+          <li className={styles.bulletsMissie}>
+            ... altijd blijven <span className={styles.focusMissie}>leren</span>
+            , ook "aan" en "van" anderen
+          </li>
+
+          <li className={styles.bulletsMissie}>
+            ... <span className={styles.focusMissie}>empatisch</span> zijn en{" "}
+            <span className={styles.focusMissie}>meedenken</span> met de klant
+          </li>
+
+          <li className={styles.bulletsMissie}>
+            ... <span className={styles.focusMissie}>dankbaar </span> zijn voor
+            wat we hebben, nog niet hebben, krijgen, en kunnen geven
+          </li>
+
+          <li className={styles.bulletsMissie}>
+            ... een sfeer van{" "}
+            <span className={styles.focusMissie}>ontspanning </span>en{" "}
+            <span className={styles.focusMissie}>rust </span> uitstralen aan
+            iedere klant
+          </li>
+
+          <li className={styles.bulletsMissie}>
+            ... een <span className={styles.focusMissie}>veilige haven </span>
+            creeëren waar iedereen vrijuit kan spreken
+          </li>
+        </ul>
+      </div>
+
+      <div className={styles.visieContainer}>
+        <h1 className={styles.visieTitle}>visie</h1>
+        <p>
+          We zijn 22 rebelse ondernemers, digitale freaks, die tastbare
+          meerwaarde creëren voor andere ondernemers. Humital richt zich op het
+          begrijpen en het begeleiden van groeiende entrepreneurs, die een
+          strategische <span className={styles.focusVisie}>"humitale"</span>{" "}
+          transformatie willen realiseren
+        </p>
+        <p>
+          We komen niet met een{" "}
+          <span className={styles.focusVisie}>"Plug & Play" </span>oplossing.
+          Niets moet, alles kan! Onze aanbevelingen zullen een wereld van
+          verschil maken.
+        </p>
       </div>
     </Layout>
   )

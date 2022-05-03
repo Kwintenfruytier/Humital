@@ -1,49 +1,224 @@
 /*Global styles for services*/
 
-.containerButtons {
-  min-height: 120%;
-  margin-top: 8rem;
+/* FOUNDERS */
+
+.aboutBanner {
   display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  position: relative;
+  width: 100%;
+  color: white;
+  background-color: #dacfff;
+  margin-top: 5rem;
+  margin-bottom: 1rem;
+}
+
+.bannerTitle {
   margin-left: 1rem;
-  margin-right: 1rem;
+  font-size: clamp(1.6rem, 4vw, 3rem);
+  font-weight: 700;
 }
 
-details > * {
-  z-index: 501;
-  cursor: default;
-  user-select: text;
-  color: black;
-  padding: 0.5em;
+.founderName {
+  color: #78c0a8;
+  text-transform: capitalize;
+  font-size: clamp(1.368rem, 3.365vw, 2.3rem);
+}
+/* Jan */
+
+.imageJan {
+  filter: grayscale(100%);
+  -webkit-filter: grayscale(100%);
+  margin-top: 2rem;
+  margin-bottom: 2rem;
 }
 
-details[open] summary + * + ul {
-  animation: fadeIn 750ms ease-in-out;
+.founderTopContainer {
+  display: flex;
+  width: 100%;
+  margin-bottom: 2rem;
+  flex-direction: column;
+  text-align: center;
 }
 
-details span {
-  font-weight: bold;
-  font-size: 1.5em;
-  padding: 0.5em;
+.founderJRightContainer {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
 }
 
-details p {
-  font-size: 0.7rem;
-  position: relative;
-  border: 1px dashed darkblue;
+.founderJLeftContainer {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.founderJLeftContent {
+  display: flex;
+  text-align: center;
+}
+.founderJRightContent {
+  max-width: 75%;
+  font-size: clamp(0.95rem, 1.7vw, 1.2rem);
+}
+
+/*
+
+.how-container {
+  width: 100%;
+  height: 21vw;
+  margin-bottom: 30px; 
+}
+
+.left-container {
+  float: left;
+  height: 21vw;
+  width: 50%;
+}
+
+.right-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 21vw;
+  background: #fff;
+  width: 50%;
+  float: left;
+}
+
+.left-content {
+  width: 100%;
+  height: 21vw;
+}
+
+.right-content {
+  max-width: 70%;
+}
+*/
+
+/* Domien */
+
+.imageDomien {
+  filter: grayscale(100%);
+  -webkit-filter: grayscale(100%);
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.founderBottomContainer {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  text-align: center;
+}
+
+.founderDLeftContainer {
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+}
+
+.founderDRightContainer {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.founderDRightContent {
+  display: flex;
+}
+.founderDLeftContent {
+  max-width: 75%;
+  font-size: clamp(0.95rem, 1.7vw, 1.2rem);
+}
+
+/* MISSIE */
+.containerMissie {
   display: flex;
   flex-direction: column;
-  max-width: 30%;
-  max-height: 30vh;
-  margin-right: 2rem;
-  border-radius: 28px;
-  max-width: 50%;
-  letter-spacing: 0.5px;
-  padding: 1rem;
+}
+.missieTitle {
+  font-weight: 700;
+  font-size: clamp(1.3rem, 4vw, 3rem);
+  margin-bottom: 1rem;
+  text-align: left;
+  margin-left: 1rem;
 }
 
+.missieTitle::before {
+  content: "MISSIE";
+  margin-right: 0.8rem;
+  color: #78c0a8;
+  font-size: clamp(1.6rem, 4vw, 3rem);
+}
+
+.missieTxt {
+  display: flex;
+  flex-direction: column;
+}
+
+.bulletsMissie {
+  /*position: relative;
+  font-size: clamp(0.8rem, 1.3vw, 1.5rem);
+  margin-right: 1rem;
+  border: 1px solid black;
+  list-style-position: outside;*/
+  list-style-type: none;
+  position: relative;
+  margin-right: 0.8rem;
+  list-style-position: outside;
+  display: block;
+  padding-left: clamp(25px, 3vw, 48px);
+  padding-bottom: 1rem;
+  font-size: clamp(0.95rem, 1.7vw, 1.2rem);
+}
+
+.bulletsMissie::before {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 20px;
+  width: clamp(25px, 2.5vw, 48px);
+  background-image: url(../images/overOns/bulletsImg.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+.focusMissie {
+  color: #78c0a8;
+  font-weight: bold;
+}
+
+/* VISIE */
+
+.visieContainer {
+  display: flex;
+  flex-flow: column wrap;
+  margin-bottom: 5rem;
+}
+
+.visieContainer > p {
+  font-size: clamp(0.95rem, 1.7vw, 1.2rem);
+  text-align: left;
+}
+.visieTitle {
+  font-weight: 700;
+  margin-bottom: 1rem;
+  text-align: left;
+  margin-left: 0.8rem;
+  color: #78c0a8;
+  font-size: clamp(1.6rem, 4vw, 3rem);
+  text-transform: uppercase;
+}
+
+.focusVisie {
+  color: #78c0a8;
+  font-weight: bold;
+  font-size: clamp(1.2rem, 1.9vw, 1.5rem);
+}
 @keyframes fadeIn {
   0% {
     opacity: 0;
@@ -56,217 +231,7 @@ details p {
   }
 }
 
-details > summary {
-  list-style: none;
-  cursor: pointer;
-}
-
-details > summary::marker, /* Latest Chrome, Edge, Firefox */ 
-details > summary::-webkit-details-marker /* Safari */ {
-  display: none;
-}
-
-/*image 1: missie */
-.missieBtn {
-  background-color: transparent;
-  border-style: none;
-  position: absolute;
-  align-self: center;
-}
-
-.missieImage {
-  background-size: contain;
-  transition: transform 150ms ease-in-out;
-  object-fit: contain;
-  min-height: max-content;
-}
-.missieImage:hover,
-.missieImage:focus,
-.missieImage:active {
-  transform: scale(1.1, 1.1);
-  z-index: 500;
-  opacity: 1;
-  cursor: pointer;
-}
-
-.missieTxt {
-  background-color: #e6e7e2;
-  left: 45%;
-  top: -176px;
-  font-size: 0.7rem;
-  position: relative;
-  /*border: 1px dashed darkblue;*/
-  display: flex;
-  flex-direction: column;
-  max-height: 20vh;
-  margin-right: 2rem;
-  border-radius: 28px;
-  max-width: 50%;
-  letter-spacing: 0.5px;
-  padding: 1rem;
-  overflow: auto;
-}
-.missieTxt li {
-  text-align: left;
-  padding-bottom: 1rem;
-}
-
-/*.missieBtn:hover + .missieTxt,
-.missieBtn:active + .missieTxt {
-  display: flex;
-  flex-wrap: wrap;
-  min-width: 15vw;
-  background-color: gray;
-  color: white;
-  z-index: 500;
-  position: absolute;
-  right: 10%;
-  transition: all 500ms ease-in-out;
-}*/
-
-/*image 2: visie*/
-.visieBtn {
-  background-color: transparent;
-  border-style: none;
-  position: absolute;
-  align-self: center;
-  top: 20vh;
-}
-
-.visieImage {
-  background-size: contain;
-  transition: transform 150ms ease-in-out;
-  object-fit: contain;
-}
-
-.visieImage:hover,
-.visieImage:focus {
-  transform: scale(1.1, 1.1);
-  z-index: 5;
-  cursor: pointer;
-}
-
-.visieTxt {
-  background-color: #cca09c;
-}
-
-/*image 3: Jan */
-.founderJBtn {
-  background-color: transparent;
-  border-style: none;
-  position: absolute;
-  align-self: center;
-  top: 37.5vh;
-}
-
-.founderJImage {
-  background-size: contain;
-  transition: transform 150ms ease-in-out;
-}
-
-.founderJImage:hover,
-.founderJImage:focus {
-  transform: scale(1.1, 1.1);
-  z-index: 5;
-  cursor: pointer;
-}
-
-.founderJTxt {
-  background-color: #a9d18e;
-  left: 52%;
-  top: -210px;
-  font-size: 0.7rem;
-  position: relative;
-  border: 1px dashed darkblue;
-  display: flex;
-  flex-direction: column;
-  max-height: 20vh;
-  margin-right: 2rem;
-  border-radius: 28px;
-  max-width: 50%;
-  letter-spacing: 0.5px;
-  padding: 1rem;
-  overflow: auto;
-}
-.founderJTxt li {
-  text-align: left;
-  padding-bottom: 0.7rem;
-}
-
-/*image 4: Domien */
-.founderDBtn {
-  background-color: transparent;
-  border-style: none;
-  position: absolute;
-  align-self: center;
-  top: 65.9vh;
-}
-
-.founderDImage {
-  background-size: contain;
-  transition: transform 150ms ease-in-out;
-}
-
-.founderDImage:hover,
-.founderDImage:focus {
-  transform: scale(1.1, 1.1);
-  z-index: 5;
-  cursor: pointer;
-}
-
-.founderDTxt {
-  background-color: #85bd5f;
-  top: -210px;
-  font-size: 0.7rem;
-  position: relative;
-  border: 1px dashed darkblue;
-  display: flex;
-  flex-direction: column;
-  max-height: 20vh;
-  margin-right: 2rem;
-  border-radius: 28px;
-  max-width: 50%;
-  letter-spacing: 0.5px;
-  padding: 1rem;
-  overflow: auto;
-}
-.founderDTxt li {
-  text-align: left;
-  padding-bottom: 0.7rem;
-}
 /*Different screensizes*/
 
 @media only screen and (min-width: 750px) {
-  .missieBtn {
-    background-color: transparent;
-    border-style: none;
-    position: absolute;
-    align-self: center;
-  }
-  .visieBtn {
-    background-color: transparent;
-    border-style: none;
-    position: absolute;
-    align-self: center;
-  }
-
-  .founderJBtn {
-    background-color: transparent;
-    border-style: none;
-    position: absolute;
-    align-self: center;
-  }
-
-  .founderDBtn {
-    background-color: transparent;
-    border-style: none;
-    position: absolute;
-    align-self: center;
-  }
-
-  .visualsBtn {
-    background-color: transparent;
-    border-style: none;
-    position: absolute;
-  }
 }
