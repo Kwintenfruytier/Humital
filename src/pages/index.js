@@ -9,7 +9,6 @@ const IndexPage = () => {
   return (
     <Layout>
       <Seo title="Home" />
-
       <div className={styles.indexMain}>
         <div className={styles.ctaContent}>
           <div className={styles.ctaWrapper}>

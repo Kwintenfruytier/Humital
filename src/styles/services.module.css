@@ -1,13 +1,33 @@
 /*Global styles for services*/
 
+/* BANNER */
+.aboutBanner {
+  display: flex;
+  width: 100%;
+  color: white;
+  background-color: #dacfff;
+  margin-top: 5rem;
+  margin-bottom: 1rem;
+}
+
+.bannerTitle {
+  margin-left: 1rem;
+  font-size: clamp(1.6rem, 4vw, 3rem);
+  font-weight: 700;
+}
+
+/* GENERAL */
+
 .containerButtons {
-  margin-top: 8rem;
   display: flex;
   flex-direction: column;
+  background-color: red;
   flex-wrap: wrap;
   position: relative;
-  margin-left: 1rem;
-  margin-right: 1rem;
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+  margin-top: 2rem;
+  align-items: center;
 }
 
 details > * {
@@ -70,14 +90,10 @@ details > summary::-webkit-details-marker /* Safari */ {
   background-color: transparent;
   border-style: none;
   position: absolute;
-  align-self: center;
 }
 
 .brainfoodImage {
-  background-size: contain;
   transition: transform 150ms ease-in-out;
-  object-fit: contain;
-  min-height: max-content;
 }
 .brainfoodImage:hover,
 .brainfoodImage:focus,
@@ -111,7 +127,7 @@ details > summary::-webkit-details-marker /* Safari */ {
   background-color: transparent;
   border-style: none;
   position: absolute;
-  left: 0;
+
   top: 15vh;
 }
 
@@ -137,7 +153,7 @@ details > summary::-webkit-details-marker /* Safari */ {
   background-color: transparent;
   border-style: none;
   position: absolute;
-  right: 0;
+
   top: 30vh;
 }
 
@@ -163,7 +179,6 @@ details > summary::-webkit-details-marker /* Safari */ {
   background-color: transparent;
   border-style: none;
   position: absolute;
-  left: 0;
   top: 46vh;
 }
 
@@ -187,7 +202,6 @@ details > summary::-webkit-details-marker /* Safari */ {
   background-color: transparent;
   border-style: none;
   position: absolute;
-  right: 0;
   top: 61vh;
 }
 
@@ -242,5 +256,6 @@ details > summary::-webkit-details-marker /* Safari */ {
     background-color: transparent;
     border-style: none;
     position: absolute;
+    align-self: center;
   }
 }

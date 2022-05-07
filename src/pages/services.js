@@ -9,6 +9,10 @@ const Services = () => {
     <Layout>
       <Seo title="Diensten" />
 
+      <div className={styles.aboutBanner}>
+        <h1 className={styles.bannerTitle}>Onze diensten</h1>
+      </div>
+
       <div className={styles.containerButtons}>
         <button
           className={styles.brainfoodBtn}
