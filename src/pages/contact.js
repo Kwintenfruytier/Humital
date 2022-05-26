@@ -8,6 +8,9 @@ const Contact = () => {
   return (
     <Layout>
       <Seo title="Contact" />
+      <div className={styles.aboutBanner}>
+        <h1 className={styles.bannerTitle}>Hoe kan je ons bereiken?</h1>
+      </div>
       <div className={styles.contactWrapper}>
         <div className={styles.contactInfo}>
           <h1>Humital</h1>

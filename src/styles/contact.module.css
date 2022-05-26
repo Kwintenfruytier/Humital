@@ -1,8 +1,26 @@
+/* BANNER */
+.aboutBanner {
+  display: flex;
+  width: 100%;
+  color: white;
+  background-color: #dacfff;
+  margin-top: 5rem;
+  margin-bottom: 1rem;
+}
+
+.bannerTitle {
+  margin-left: 1rem;
+  font-size: clamp(1.6rem, 4vw, 3rem);
+  font-weight: 700;
+}
+
+/*------------------------------------------*/
+
 .contactWrapper {
   color: white;
   display: flex;
   flex-wrap: wrap;
-  margin-top: 10rem;
+  margin-top: 2rem;
   line-height: normal;
 }
 .contactInfo {
@@ -12,11 +30,12 @@
   align-items: center;
   text-align: center;
   padding: 0.5rem 0.5rem;
-  min-width: 90vw;
+  width: 100%;
   min-height: 30vh;
-  margin: 0 auto;
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
+  margin-left: 1rem;
+  margin-right: 1rem;
 }
 .contactInfo h1 {
   font-size: 2rem;
@@ -57,7 +76,7 @@
 iframe {
   min-height: 50vh;
   margin-bottom: 1rem;
-  min-width: 90vw;
+  min-width: 100%;
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
 }
@@ -84,20 +103,38 @@ p {
 }
 
 .maps {
-  margin: 0 auto;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  width: 100%;
 }
 
-@media only screen and (min-width: 720px) {
+@media only screen and (min-width: 900px) {
   .contactWrapper {
-    flex-direction: row-reverse;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+  }
+  .contactInfo {
+    width: clamp(20%, 50%, 50%);
+    margin-right: 0;
+    flex: 1 1 0px;
+    flex-basis: 100%;
   }
 
-  .contactInfo {
-    flex-direction: column;
-    flex-basis: 0;
-  }
-  iframe {
+  .maps {
     display: flex;
-    flex-direction: row;
+    width: clamp(20%, 50%, 50%);
+    margin-left: 0;
+
+    flex: 1 1 0px;
+    flex-basis: 100%;
+  }
+
+  iframe {
+    margin-left: 0;
+    flex: 1 1 0px;
+    flex-basis: 100%;
   }
 }
