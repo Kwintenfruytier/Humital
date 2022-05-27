@@ -123,8 +123,6 @@ p {
     display: flex;
     width: clamp(20%, 50%, 50%);
     margin-left: 0;
-
-    border: red solid 2px;
   }
 
   iframe {
