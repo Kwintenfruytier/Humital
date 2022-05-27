@@ -20,8 +20,9 @@
   color: white;
   display: flex;
   flex-wrap: wrap;
-  margin-top: 2rem;
+  margin-top: 3rem;
   line-height: normal;
+  margin-bottom: 3rem;
 }
 .contactInfo {
   display: flex;
@@ -112,15 +113,10 @@ p {
   .contactWrapper {
     display: flex;
     flex-flow: row nowrap;
-    align-items: center;
-    justify-content: center;
-    margin: 0 auto;
   }
   .contactInfo {
     width: clamp(20%, 50%, 50%);
     margin-right: 0;
-    flex: 1 1 0px;
-    flex-basis: 100%;
   }
 
   .maps {
@@ -128,13 +124,10 @@ p {
     width: clamp(20%, 50%, 50%);
     margin-left: 0;
 
-    flex: 1 1 0px;
-    flex-basis: 100%;
+    border: red solid 2px;
   }
 
   iframe {
-    margin-left: 0;
-    flex: 1 1 0px;
-    flex-basis: 100%;
+    display: flex;
   }
 }

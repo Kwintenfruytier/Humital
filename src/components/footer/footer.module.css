@@ -33,27 +33,24 @@ h4 {
   margin-top: 1rem;
   margin-bottom: 0.5rem;
   text-transform: uppercase;
-  text-align: center;
+  align-self: center;
 }
 
 /*Top Footer*/
 
 .footerTopSection {
   width: 100%;
-  padding: 1rem;
+  text-align: center;
+  padding-top: 1rem;
 }
 .footerTopList {
-  text-align: center;
   width: 100%;
 }
 .footerTopList li {
-  width: 97%;
-
-  text-align: center;
+  width: 100%;
 }
 .footerLogo {
   color: #78c0a8;
-  font-size: 3rem;
   font-size: clamp(2rem, 3.3vw, 4rem);
   text-transform: none;
   letter-spacing: normal;

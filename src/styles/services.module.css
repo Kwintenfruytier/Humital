@@ -16,246 +16,348 @@
   font-weight: 700;
 }
 
+.serviceName {
+  color: #78c0a8;
+  text-transform: capitalize;
+  font-size: clamp(1.368rem, 3.365vw, 2.3rem);
+}
+
 /* GENERAL */
 
-.containerButtons {
-  display: flex;
-  flex-direction: column;
-  background-color: red;
-  flex-wrap: wrap;
-  position: relative;
-  margin-left: 1.5rem;
-  margin-right: 1.5rem;
+/* BRAINFOOD */
+
+.imageBrainfood {
   margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.BrainfoodContainer {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  text-align: center;
+}
+
+.BrainfoodRightContainer {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 3rem;
+}
+
+.BrainfoodLeftContainer {
+  display: flex;
+  text-align: center;
+  justify-content: center;
   align-items: center;
 }
 
-details > * {
-  z-index: 501;
-  cursor: default;
-  user-select: text;
-  color: black;
-  padding: 0.5em;
-}
-
-details[open] summary + * {
-  animation: fadeIn 750ms ease-in-out;
-}
-
-details span {
-  font-weight: 500;
-  font-size: 1.5em;
-  padding: 0.5em;
-}
-
-details p {
-  font-size: 0.7rem;
-  position: relative;
-  border: 1px dashed darkblue;
+.BrainfoodLeftContent {
   display: flex;
+  text-align: center;
+}
+.BrainfoodRightContent {
+  max-width: 75%;
+  font-size: clamp(0.9rem, 1.7vw, 1rem);
+}
+
+/* JOURNEY */
+
+.imageJourney {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.JourneyContainer {
+  display: flex;
+  width: 100%;
   flex-direction: column;
-  max-height: 30vh;
-  top: -176px;
-  margin-right: 2rem;
-  border-radius: 28px;
-  max-width: 50%;
-  letter-spacing: 0.5px;
-  padding: 1rem;
+  text-align: center;
 }
 
-@keyframes fadeIn {
-  0% {
-    opacity: 0;
-    transform: scale(0);
-  }
-
-  100% {
-    opacity: 1;
-    transform: scale(1);
-  }
-}
-
-details > summary {
-  list-style: none;
-  cursor: pointer;
-}
-
-details > summary::marker, /* Latest Chrome, Edge, Firefox */ 
-details > summary::-webkit-details-marker /* Safari */ {
-  display: none;
-}
-
-/*image 1 */
-.brainfoodBtn {
-  background-color: transparent;
-  border-style: none;
-  position: absolute;
-}
-
-.brainfoodImage {
-  transition: transform 150ms ease-in-out;
-}
-.brainfoodImage:hover,
-.brainfoodImage:focus,
-.brainfoodImage:active {
-  transform: scale(1.1, 1.1);
-  z-index: 500;
-  opacity: 1;
-  cursor: pointer;
-}
-
-.brainfoodTxt {
-  background-color: #f4b183;
-  left: 45%;
-}
-
-/*.brainfoodBtn:hover + .brainfoodTxt,
-.brainfoodBtn:active + .brainfoodTxt {
+.JourneyLeftContainer {
   display: flex;
-  flex-wrap: wrap;
-  min-width: 15vw;
-  background-color: gray;
-  color: white;
-  z-index: 500;
-  position: absolute;
-  right: 10%;
-  transition: all 500ms ease-in-out;
-}*/
 
-/*image 2 */
-.journeyBtn {
-  background-color: transparent;
-  border-style: none;
-  position: absolute;
-
-  top: 15vh;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 3rem;
 }
 
-.journeyImage {
-  background-size: contain;
-  transition: transform 150ms ease-in-out;
-  object-fit: contain;
+.JourneyRightContainer {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
 }
 
-.journeyImage:hover,
-.journeyImage:focus {
-  transform: scale(1.1, 1.1);
-  z-index: 5;
-  cursor: pointer;
+.JourneyRightContent {
+  display: flex;
+}
+.JourneyLeftContent {
+  max-width: 75%;
+  font-size: clamp(0.9rem, 1.7vw, 1rem);
 }
 
-.journeyTxt {
-  background-color: #b4c7e7;
+/* PROJECT */
+
+.imageProjects {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
 }
 
-/*image 3 */
-.projectBtn {
-  background-color: transparent;
-  border-style: none;
-  position: absolute;
-
-  top: 30vh;
+.ProjectsContainer {
+  display: flex;
+  width: 100%;
+  margin-bottom: 2rem;
+  flex-direction: column;
+  text-align: center;
 }
 
-.projectImage {
-  background-size: contain;
-  transition: transform 150ms ease-in-out;
+.ProjectsRightContainer {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 3rem;
 }
 
-.projectImage:hover,
-.projectImage:focus {
-  transform: scale(1.1, 1.1);
-  z-index: 5;
-  cursor: pointer;
+.ProjectsLeftContainer {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
 }
 
-.projectTxt {
-  background-color: #a9d18e;
-  left: 45%;
+.ProjectsLeftContent {
+  display: flex;
+  text-align: center;
+}
+.ProjectsRightContent {
+  max-width: 75%;
+  font-size: clamp(0.9rem, 1.7vw, 1rem);
 }
 
-/*image 4 */
-.speakerBtn {
-  background-color: transparent;
-  border-style: none;
-  position: absolute;
-  top: 46vh;
+/* SPEAKER */
+
+.imageSpeaker {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
 }
 
-.speakerImage {
-  background-size: contain;
-  transition: transform 150ms ease-in-out;
-}
-.speakerImage:hover,
-.speakerImage:focus {
-  transform: scale(1.1, 1.1);
-  z-index: 5;
-  cursor: pointer;
+.SpeakerContainer {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  text-align: center;
 }
 
-.speakerTxt {
-  background-color: #ffe699;
+.SpeakerLeftContainer {
+  display: flex;
+  margin-bottom: 3rem;
+  justify-content: center;
+  align-items: center;
 }
 
-/*image 5 */
-.visualsBtn {
-  background-color: transparent;
-  border-style: none;
-  position: absolute;
-  top: 61vh;
+.SpeakerRightContainer {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
 }
 
-.visualsImage {
-  background-size: contain;
-  transition: transform 150ms ease-in-out;
+.SpeakerRightContent {
+  display: flex;
+}
+.SpeakerLeftContent {
+  max-width: 75%;
+  font-size: clamp(0.9rem, 1.7vw, 1rem);
 }
 
-.visualsImage:hover,
-.visualsImage:focus {
-  transform: scale(1.1, 1.1);
-  z-index: 5;
-  cursor: pointer;
+/* VISUALS */
+
+.imageVisuals {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
 }
 
-.visualsTxt {
-  background-color: #78c0a8;
-  left: 45%;
+.VisualsContainer {
+  display: flex;
+  width: 100%;
+  margin-bottom: 2rem;
+  flex-direction: column;
+  text-align: center;
+}
+
+.VisualsRightContainer {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 3rem;
+}
+
+.VisualsLeftContainer {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.VisualsLeftContent {
+  display: flex;
+  text-align: center;
+}
+.VisualsRightContent {
+  max-width: 75%;
+  font-size: clamp(0.9rem, 1.7vw, 1rem);
 }
 
 /*Different screensizes*/
 
 @media only screen and (min-width: 750px) {
-  .brainfoodBtn {
-    background-color: transparent;
-    border-style: none;
-    position: absolute;
-    align-self: center;
-  }
-  .journeyBtn {
-    background-color: transparent;
-    border-style: none;
-    position: absolute;
-    align-self: center;
+  /*BRAINFOOD */
+
+  .BrainfoodContainer {
+    width: 100%;
+    flex-direction: row;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
   }
 
-  .projectBtn {
-    background-color: transparent;
-    border-style: none;
-    position: absolute;
-    align-self: center;
+  .BrainfoodRightContainer {
+    flex-basis: 50%;
+    align-items: center;
+    justify-content: space-around;
   }
 
-  .speakerBtn {
-    background-color: transparent;
-    border-style: none;
-    position: absolute;
-    align-self: center;
+  .BrainfoodLeftContainer {
+    justify-content: center;
+    align-items: center;
+    flex-basis: 50%;
   }
 
-  .visualsBtn {
-    background-color: transparent;
-    border-style: none;
-    position: absolute;
-    align-self: center;
+  .BrainfoodLeftContent {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+  .BrainfoodRightContent {
+    max-width: 75%;
+  }
+
+  /* JOURNEY */
+
+  .JourneyContainer {
+    width: 100%;
+    flex-direction: row-reverse;
+    margin-bottom: 5rem;
+  }
+
+  .JourneyLeftContainer {
+    flex-basis: 50%;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  .JourneyRightContainer {
+    justify-content: center;
+    align-items: center;
+    flex-basis: 50%;
+  }
+
+  .JourneyRightContent {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+  .JourneyLeftContent {
+    max-width: 83%;
+  }
+
+  /*PROJECTS */
+  .ProjectsContainer {
+    width: 100%;
+    flex-direction: row;
+    margin-bottom: 5rem;
+  }
+
+  .ProjectsRightContainer {
+    flex-basis: 50%;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  .ProjectsLeftContainer {
+    justify-content: center;
+    align-items: center;
+    flex-basis: 50%;
+  }
+
+  .ProjectsLeftContent {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+  .ProjectsRightContent {
+    max-width: 75%;
+  }
+
+  /* SPEAKER */
+
+  .SpeakerContainer {
+    width: 100%;
+    flex-direction: row-reverse;
+    margin-bottom: 5rem;
+  }
+
+  .SpeakerLeftContainer {
+    flex-basis: 50%;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  .SpeakerRightContainer {
+    justify-content: center;
+    align-items: center;
+    flex-basis: 50%;
+  }
+
+  .SpeakerRightContent {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+  .SpeakerLeftContent {
+    max-width: 83%;
+  }
+
+  /* VISUALS */
+
+  .VisualsContainer {
+    width: 100%;
+    flex-direction: row;
+    margin-bottom: 5rem;
+  }
+
+  .VisualsRightContainer {
+    flex-basis: 50%;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  .VisualsLeftContainer {
+    justify-content: center;
+    align-items: center;
+    flex-basis: 50%;
+  }
+
+  .VisualsLeftContent {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+  .VisualsRightContent {
+    max-width: 75%;
   }
 }

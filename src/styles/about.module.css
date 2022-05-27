@@ -62,40 +62,6 @@
   font-size: clamp(0.9rem, 1.7vw, 1rem);
 }
 
-/*
-
-.how-container {
-  width: 100%;
-  height: 21vw;
-  margin-bottom: 30px; 
-}
-
-.left-container {
-  float: left;
-  height: 21vw;
-  width: 50%;
-}
-
-.right-container {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  height: 21vw;
-  background: #fff;
-  width: 50%;
-  float: left;
-}
-
-.left-content {
-  width: 100%;
-  height: 21vw;
-}
-
-.right-content {
-  max-width: 70%;
-}
-*/
-
 /* Domien */
 
 .imageDomien {
@@ -158,7 +124,6 @@
   display: flex;
   flex-direction: column;
   padding-left: 0;
-  margin-left: 0.8rem;
 }
 
 .bulletsMissie {
@@ -175,13 +140,14 @@
   padding-left: clamp(25px, 3vw, 48px);
   padding-bottom: 1rem;
   font-size: clamp(0.9rem, 1.7vw, 1rem);
+  margin-left: 2rem;
 }
 
 .bulletsMissie::before {
   content: "";
   display: block;
   position: absolute;
-  left: 0;
+  left: -8px;
   top: 0;
   height: 20px;
   width: clamp(25px, 2.5vw, 48px);
