@@ -5,7 +5,7 @@ module.exports = {
     title: `Humital`,
     description: `Combining Human with Capital, Humital staat voor jou klaar. Wij helpen jou technologie te combineren met het menselijke`,
     author: `@Kwinten`,
-    siteUrl: "https://gatsbystarterdefaultsource.gatsbyjs.io",
+    siteUrl: "https://humital.gatsbyjs.io/",
   },
   plugins: [
     {
@@ -82,10 +82,11 @@ module.exports = {
       },
     },
     `gatsby-plugin-offline`,
+
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
-    {
+    /* {
       resolve: `gatsby-plugin-gdpr-cookies`,
       options: {
         googleAnalytics: {
@@ -95,8 +96,7 @@ module.exports = {
           allowAdFeatures: false, // default
         },
       },
-    },
-    {
+    }*/ {
       resolve: `gatsby-plugin-google-gtag`,
       options: {
         // You can add multiple tracking ids and a pageview event will be fired for all of them.

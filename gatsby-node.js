@@ -7,7 +7,7 @@ exports.createPages = async ({ actions }) => {
     defer: true,
   })
 }
-
+/*
 exports.onCreateWebpackConfig = ({ actions, loaders, stage }) => {
   if (stage === "build-html") {
     actions.setWebpackConfig({
@@ -22,3 +22,4 @@ exports.onCreateWebpackConfig = ({ actions, loaders, stage }) => {
     })
   }
 }
+*/
