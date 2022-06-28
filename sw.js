@@ -27,24 +27,24 @@ workbox.core.clientsClaim();
  */
 self.__precacheManifest = [
   {
-    "url": "webpack-runtime-6433f7260fc1a38827c4.js"
+    "url": "webpack-runtime-9bd9789655999380b675.js"
   },
   {
     "url": "framework-3038763f85387ee654e1.js"
   },
   {
-    "url": "app-81b47bc36fb342c3a661.js"
+    "url": "app-e33adcf43985488f3737.js"
   },
   {
     "url": "offline-plugin-app-shell-fallback/index.html",
-    "revision": "68ed24976233acb0b6bd252b078e759b"
+    "revision": "f8aa5443525ef57e99f0db7339b7ddd7"
   },
   {
     "url": "polyfill-ce12f3ea291c7204c1ab.js"
   },
   {
     "url": "manifest.webmanifest",
-    "revision": "bb5d51fea5cc1e57021c67e4bcff78d2"
+    "revision": "6b1cdaea9fbe5dd6c753bbe6f4356ebd"
   }
 ].concat(self.__precacheManifest || []);
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
@@ -149,12 +149,12 @@ const navigationRoute = new NavigationRoute(async ({ event }) => {
   lastNavigationRequest = event.request.url
 
   let { pathname } = new URL(event.request.url)
-  pathname = pathname.replace(new RegExp(`^/Humital`), ``)
+  pathname = pathname.replace(new RegExp(`^/HumitalWebsite`), ``)
 
   // Check for resources + the app bundle
   // The latter may not exist if the SW is updating to a new version
   const resources = await idbKeyval.get(`resources:${pathname}`)
-  if (!resources || !(await caches.match(`/Humital/app-81b47bc36fb342c3a661.js`))) {
+  if (!resources || !(await caches.match(`/HumitalWebsite/app-e33adcf43985488f3737.js`))) {
     return await fetch(event.request)
   }
 
@@ -167,7 +167,7 @@ const navigationRoute = new NavigationRoute(async ({ event }) => {
     }
   }
 
-  const offlineShell = `/Humital/offline-plugin-app-shell-fallback/index.html`
+  const offlineShell = `/HumitalWebsite/offline-plugin-app-shell-fallback/index.html`
   const offlineShellWithKey = workbox.precaching.getCacheKeyForURL(offlineShell)
   return await caches.match(offlineShellWithKey)
 })
