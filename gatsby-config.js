@@ -1,7 +1,7 @@
 const siteUrl = process.env.URL || `humitalmain.gatsbyjs.io`
 
 module.exports = {
-  pathPrefix: "/Humital",
+  pathPrefix: "/HumitalWebsite",
   siteMetadata: {
     title: `Humital`,
     description: `Combining Human with Capital, Humital staat voor jou klaar. Wij helpen jou technologie te combineren met het menselijke`,
