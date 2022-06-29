@@ -36,7 +36,8 @@ const Layout = ({ children }) => {
         flipButtons={true}
       >
         Omnom Omnom! Wij gebruiken koekjes om jouw ervaring beter te maken. Wil
-        je meer weten welke gegevens we verzamelen? Klik hierè
+        je meer weten welke gegevens we verzamelen? Klik{" "}
+        <Link to="/privacy">hier.</Link>
       </CookieConsent>
       <Footer />
     </>
