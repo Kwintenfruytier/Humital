@@ -27,17 +27,17 @@ workbox.core.clientsClaim();
  */
 self.__precacheManifest = [
   {
-    "url": "webpack-runtime-9bd9789655999380b675.js"
+    "url": "webpack-runtime-3987756cf9dbcda5cdfc.js"
   },
   {
     "url": "framework-3038763f85387ee654e1.js"
   },
   {
-    "url": "app-e33adcf43985488f3737.js"
+    "url": "app-5fcab9de7b34cf7b8b2c.js"
   },
   {
     "url": "offline-plugin-app-shell-fallback/index.html",
-    "revision": "b89c70cb2df97d03d79627aeef2ee97c"
+    "revision": "da169fe1ef9d58b03b358d395fe183a2"
   },
   {
     "url": "polyfill-ce12f3ea291c7204c1ab.js"
@@ -154,7 +154,7 @@ const navigationRoute = new NavigationRoute(async ({ event }) => {
   // Check for resources + the app bundle
   // The latter may not exist if the SW is updating to a new version
   const resources = await idbKeyval.get(`resources:${pathname}`)
-  if (!resources || !(await caches.match(`/HumitalWebsite/app-e33adcf43985488f3737.js`))) {
+  if (!resources || !(await caches.match(`/HumitalWebsite/app-5fcab9de7b34cf7b8b2c.js`))) {
     return await fetch(event.request)
   }
 
